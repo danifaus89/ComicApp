@@ -2,31 +2,29 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { SharedModuleModule } from './shared/modules/shared-module.module';
+import { PagesRoutingModule } from './pages/pages-routing.module';
 //COMPONENTS//
-import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { NopagefoundComponent } from './pages/nopagefound/nopagefound.component';
-import { PagesComponent } from './pages/pages.component';
+import { AuthRoutingModule } from './auth/auth-routing.module';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: PagesComponent,
-    children: [
-      { path: 'dashboard', component: DashboardComponent },
-      { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
-    ],
-  },
-
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
+
+  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
 
   { path: '**', component: NopagefoundComponent },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes), SharedModuleModule],
+  imports: [
+    RouterModule.forRoot(routes),
+    SharedModuleModule,
+    PagesRoutingModule,
+    AuthRoutingModule,
+  ],
   exports: [RouterModule, SharedModuleModule],
 })
 export class AppRoutingModule {}
