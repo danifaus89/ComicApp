@@ -8,9 +8,10 @@ import { AuthModule } from './auth/auth.module';
 //PAGES//
 import { NopagefoundComponent } from './pages/nopagefound/nopagefound.component';
 import { AppComponent } from './app.component';
+import { HeroCardComponent } from './shared/components/hero-card/hero-card.component';
 
 @NgModule({
-  declarations: [AppComponent, NopagefoundComponent],
+  declarations: [AppComponent, NopagefoundComponent, HeroCardComponent],
   imports: [BrowserModule, AppRoutingModule, PagesModule, AuthModule],
   providers: [],
   bootstrap: [AppComponent],
