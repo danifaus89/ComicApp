@@ -1,15 +1,27 @@
 import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { PagesComponent } from './pages.component';
+import { HeroesComponent } from './heroes/heroes.component';
+import { ComicsComponent } from './comics/comics.component';
+import { CreatorsComponent } from './creators/creators.component';
+import { EventsComponent } from './events/events.component';
+import { SeriesComponent } from './series/series.component';
+import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 
 const routes: Routes = [
   {
-    path: 'dashboard',
+    path: 'home',
     component: PagesComponent,
-    children: [{ path: '', component: DashboardComponent }],
+    children: [{ path: '', component: PagesComponent }],
   },
+  { path: 'heroes', component: HeroesComponent },
+  { path: 'hero-detail/:id', component: HeroDetailComponent },
+
+  { path: 'comics', component: ComicsComponent },
+  { path: 'creators', component: CreatorsComponent },
+  { path: 'series', component: SeriesComponent },
+  { path: 'events', component: EventsComponent },
 ];
 
 @NgModule({

@@ -1,19 +1,7 @@
-<div id="main-wrapper">
-    <app-header></app-header>
-    <app-sidebar></app-sidebar>
-
-    <div class="page-wrapper">
-
-        <div class="container-fluid">
-            <!--BREADCRUMBS-->
-            <app-breadcrumbs></app-breadcrumbs>
-            <!--ROUTES-->
-            <router-outlet></router-outlet>
-
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 p-0">
+            <app-carousel [elements]="images" [responsiveOptions]="imageOptions" [interval]="6000"></app-carousel>
         </div>
-
-        <footer class="footer">
-            © 2023 Admin Pro by wrappixel.com
-        </footer>
     </div>
 </div>

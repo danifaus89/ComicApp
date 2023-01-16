@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="shadowed">
+        <div class="card rounded">
+            <img src="{{appMenu.img}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{ appMenu.title }}</h5>
+                <p class="card-text">{{ appMenu.exp }}</p>
+                <button pButton type="button" label="Go" class="p-button-outlined p-button-sm p-button-danger col-12" (click)="goToPage(appMenu.path)"></button>
+            </div>
+        </div>
+    </div>
+</div>

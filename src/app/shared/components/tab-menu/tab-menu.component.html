@@ -1,0 +1,9 @@
+<div class="my-1">
+    <ul class="nav nav-pills nav-fill">
+        <app-sidebar></app-sidebar>
+
+        <li class="nav-item" *ngFor="let tab of items">
+            <a routerLink="{{tab.routerLink}}" routerLinkActive="active" class="nav-link active rounded-0 bg-dark text-white border border-light-subtle" aria-current="page">{{ tab.label }}</a>
+        </li>
+    </ul>
+</div>

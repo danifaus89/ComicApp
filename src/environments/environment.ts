@@ -4,6 +4,8 @@
 
 export const environment = {
   production: false,
+  APIKEY: '70bbf0240debd64e1a0441bddac6305a',
+  PRIVATEKEY: 'f45ff7bdf75a0c8f7c8930d2270bf0010b8c1d19',
   API_URL: 'https://gateway.marvel.com:443/v1/public/',
 };
 

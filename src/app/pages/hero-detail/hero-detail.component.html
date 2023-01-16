@@ -1,0 +1,29 @@
+<!-- <p-card header="{{detail[0].name}}" subheader="Card Subheader" [style]="{width: '360px'}" styleClass="p-card-shadow">
+    <ng-template pTemplate="header">
+        <img alt="Card" src="{{detail[0].thumbnail}}">
+    </ng-template>
+    <p>{{detail[0].description}}</p>
+    <ng-template pTemplate="footer">
+        <p-button label="Save" icon="pi pi-check"></p-button>
+        <p-button label="Cancel" icon="pi pi-times" styleClass="p-button-secondary" [style]="{'margin-left': '.5em'}"></p-button>
+    </ng-template>
+</p-card> -->
+<div class="container-fluid">
+
+    <div class="row my-2 ml-1">
+        <button pButton pRipple type="button" label="" class="p-button-outlined p-button-danger p-button-rounded" (click)="goBack()">
+          <i class="pi pi-arrow-left" style="font-size: 1rem"></i>
+        </button>
+    </div>
+
+    <div class="row">
+        <div class="col-4">
+            <img alt="responsive" class="img-fluid" src="{{detail[0].thumbnail}}">
+        </div>
+        <div class="col-8">
+            <h3>{{detail[0].name}}</h3>
+            <p>{{detail[0].description}}</p>
+
+        </div>
+    </div>
+</div>

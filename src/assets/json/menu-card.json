@@ -1,0 +1,31 @@
+[{
+        "img": "assets/heroes/heroes.png",
+        "title": "Heroe's List",
+        "exp": "All the heroes you can list, find'em",
+        "path": "heroes"
+    },
+    {
+        "img": "assets/heroes/comics.jpg",
+        "title": "Comic's List",
+        "exp": "All the heroes you can list, find'em",
+        "path": "comics"
+    },
+    {
+        "img": "assets/heroes/creators.jpg",
+        "title": "Creators's List",
+        "exp": "All the comic creators you can find",
+        "path": "creators"
+    },
+    {
+        "img": "assets/heroes/events.jpg",
+        "title": "Event's List",
+        "exp": "All the events that will happen, find'em",
+        "path": "events"
+    },
+    {
+        "img": "assets/heroes/series.jpg",
+        "title": "Series's List",
+        "exp": "All the comic series you can list, find'em",
+        "path": "series"
+    }
+]

@@ -1,6 +1,28 @@
+@import url("../node_modules/primeicons/primeicons.css");
+@import url("../node_modules/primeng/resources/themes/saga-orange/theme.css");
+@import url("../node_modules/primeng/resources/primeng.min.css");
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
 .fast {
     -webkit-animation-duration: 0.3s;
     animation-duration: 0.3s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both
+}
+
+.shadowed {
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.img {
+    background-image: url("/assets/heroes/bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 12vh;
 }
